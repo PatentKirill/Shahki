@@ -1,11 +1,7 @@
 ﻿#include <iostream>
 #include <algorithm>
-
-
 #include <conio.h>
 #include <stdio.h>
-
-
 
 int const razpolei = 24;
 int const razpoleg = 24;
@@ -110,7 +106,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 					{
 						obpole[mestoig_i + 1][mestoig_g + 1] = food_bfy;
 					}
-					std::cout << "ssssssss\n";
+					
 				}
 				if (obpole[mestoig_i + 1][mestoig_g - 1] == bfy || obpole[mestoig_i + 1][mestoig_g - 1] == damka_y)
 				{
@@ -123,7 +119,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 					{
 						obpole[mestoig_i + 1][mestoig_g - 1] = food_bfy;
 					}
-					std::cout << "sggggggggggggg\n";
+					
 				}
 				prov = true;
 			}
@@ -146,7 +142,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 						obpole[mestoig_i - 1][mestoig_g + 1] = food_bfy;
 					}
 
-					std::cout << "ssssssssKKKKKKKKKKKKK\n";
+				
 
 				}
 				if (obpole[mestoig_i - 1][mestoig_g - 1] == bfy || obpole[mestoig_i - 1][mestoig_g - 1] == damka_y)
@@ -160,7 +156,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 					{
 						obpole[mestoig_i - 1][mestoig_g - 1] = food_bfy;
 					}
-					std::cout << "ssssssssHHHHHHHHHHHHHHHHHHH\n";
+					
 				}
 			}
 		}
@@ -186,7 +182,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 						obpole[mestoig_i - 1][mestoig_g + 1] = food_bfx;
 					}
 
-					std::cout << "ssssssssKKKKKKKKKKKKK\n";
+					
 
 				}
 				if (obpole[mestoig_i - 1][mestoig_g - 1] == bfx || obpole[mestoig_i - 1][mestoig_g - 1] == damka_x)
@@ -200,7 +196,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 					{
 						obpole[mestoig_i - 1][mestoig_g - 1] = food_bfx;
 					}
-					std::cout << "ssssssssHHHHHHHHHHHHHHHHHHH\n";
+					
 
 				}
 				
@@ -221,7 +217,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 					{
 						obpole[mestoig_i + 1][mestoig_g + 1] = food_bfx;
 					}
-					std::cout << "ssssssss\n";
+					
 				}
 				if (obpole[mestoig_i + 1][mestoig_g - 1] == bfx || obpole[mestoig_i + 1][mestoig_g - 1] == damka_x)
 				{
@@ -234,7 +230,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 					{
 						obpole[mestoig_i + 1][mestoig_g - 1] = food_bfx;
 					}
-					std::cout << "sggggggggggggg\n";
+					
 				}
 				prov = true;
 		}
@@ -254,7 +250,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 						if (obpole[mestoig_i - 1][mestoig_g + 1] == bfx || obpole[mestoig_i - 1][mestoig_g + 1] == damka_x)
 						{
 							igrch = -1;
-							std::cout << "1LLLLLLLLLLLLLL\n";
+							
 							if (obpole[mestoig_i - 1][mestoig_g + 1] == damka_x)
 							{
 								obpole[mestoig_i - 1][mestoig_g + 1] = food_bfy + 1;
@@ -267,7 +263,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 						if (obpole[mestoig_i - 1][mestoig_g - 1] == bfx || obpole[mestoig_i - 1][mestoig_g - 1] == damka_x)
 						{
 							igrch = -1;
-							std::cout << "2LLLLLLLLLLLLLL\n";
+						
 							if (obpole[mestoig_i - 1][mestoig_g - 1] == damka_x)
 							{
 								obpole[mestoig_i - 1][mestoig_g - 1] = food_bfy + 1;
@@ -280,7 +276,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 						if (obpole[mestoig_i + 1][mestoig_g + 1] == bfx || obpole[mestoig_i + 1][mestoig_g + 1] == damka_x)
 						{
 							igrch = 1;
-							std::cout << "3LLLLLLLLLLLLLL\n";
+							
 							if (obpole[mestoig_i + 1][mestoig_g + 1] == damka_x)
 							{
 								obpole[mestoig_i + 1][mestoig_g + 1] = food_bfy + 1;
@@ -293,7 +289,7 @@ void prodeat(int obpole[][razobpole], int razobpole, int mestoig_i, int mestoig_
 						if (obpole[mestoig_i + 1][mestoig_g - 1] == bfx || obpole[mestoig_i + 1][mestoig_g - 1] == damka_x)
 						{
 							igrch = 1;
-							std::cout << "4LLLLLLLLLLLLLL\n";
+							
 							if (obpole[mestoig_i + 1][mestoig_g - 1] == damka_x)
 							{
 								obpole[mestoig_i + 1][mestoig_g - 1] = food_bfy + 1;
@@ -782,22 +778,22 @@ bool provhoda(int obpole[][razobpole], int razobpole, int koordmesta_i, int koor
 		if (igr  == bfx  && (obpole[koordmesta_i][koordmesta_g] != eat_bfx && obpole[koordmesta_i][koordmesta_g] != eat_bfx + 1) )
 		{
 			prov = false;
-			std::cout << "Ход невозможен11111111111111\n";
+			std::cout << "Ход невозможен\n";
 		}
 		else if (igr == bfy && (obpole[koordmesta_i][koordmesta_g] != eat_bfy && obpole[koordmesta_i][koordmesta_g] != eat_bfy + 1) )
 		{
 			prov = false;
-			std::cout << "Ход невозможен2222222222222\n";
+			std::cout << "Ход невозможен\n";
 		}
 		if (igr == bfx && (obpole[koordhod_i][koordhod_g] != food_bfy && obpole[koordhod_i][koordhod_g] != food_bfy + 1) )
 		{
 			prov = false;
-			std::cout << "Ход невозможен333333\n";
+			std::cout << "Ход невозможен\n";
 		}
 		else if (igr == bfy && (obpole[koordhod_i][koordhod_g] != food_bfx && obpole[koordhod_i][koordhod_g] != food_bfx + 1) )
 		{
 			prov = false;
-			std::cout << "Ход невозможен4444444444\n";
+			std::cout << "Ход невозможен\n";
 		}
 	}
 	return prov;
